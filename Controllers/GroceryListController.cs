@@ -2,9 +2,11 @@ using System.Collections.Generic;
 using Microsoft.AspNetCore.Mvc;
 using dotnet_grocery_list.Models;
 using System.Linq;
+using Microsoft.AspNetCore.Authorization;
 
 namespace dotnet_grocery_list.Controllers
 {
+    [Authorize]
     [Route("api/[controller]")]
     public class GroceryListController : Controller
     {
